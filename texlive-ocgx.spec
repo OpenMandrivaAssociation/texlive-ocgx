@@ -1,11 +1,11 @@
-# revision 27878
+# revision 28492
 # category Package
 # catalog-ctan /macros/latex/contrib/ocgx
-# catalog-date 2012-10-02 22:33:20 +0200
+# catalog-date 2012-12-10 10:44:43 +0100
 # catalog-license lppl
-# catalog-version 0.3
+# catalog-version 0.5
 Name:		texlive-ocgx
-Version:	0.3
+Version:	0.5
 Release:	1
 Summary:	Use OCGs within a PDF document without JavaScript
 Group:		Publishing
@@ -20,13 +20,14 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The ocgx package extends the ocg package (which comes with
-Asymptote) which allows you to create OCGs (Optional Content
-Groups) in PDF documents. Every OCG includes TeX material into
-a layer of the PDF file. Each of these layers can be displayed
-or not. Links can enable or disable the display of OCGs. The
-ocgx package does not use Javascript embedded in the PDF
-document to enable (to show) or disable (to hide) OCGs.
+The package extends the ocg package, which allows you to create
+OCGs (Optional Content Groups) in PDF documents. (The ocg
+package is distributed as part of Asymptote.) Every OCG
+includes TeX material into a layer of the PDF file. Each of
+these layers can be displayed or not. Links can enable or
+disable the display of OCGs. The ocgx package does not use
+Javascript embedded in the PDF document to enable (to show) or
+disable (to hide) OCGs.
 
 %post
     %{_sbindir}/texlive.post
