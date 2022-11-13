@@ -1,19 +1,13 @@
-# revision 28492
-# category Package
-# catalog-ctan /macros/latex/contrib/ocgx
-# catalog-date 2012-12-10 10:44:43 +0100
-# catalog-license lppl
-# catalog-version 0.5
 Name:		texlive-ocgx
-Version:	0.5
-Release:	10
+Version:	54512
+Release:	1
 Summary:	Use OCGs within a PDF document without JavaScript
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ocgx
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ Javascript embedded in the PDF document to enable (to show) or
 disable (to hide) OCGs.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ disable (to hide) OCGs.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
