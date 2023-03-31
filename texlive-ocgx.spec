@@ -1,6 +1,6 @@
 Name:		texlive-ocgx
 Version:	54512
-Release:	1
+Release:	2
 Summary:	Use OCGs within a PDF document without JavaScript
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ocgx
