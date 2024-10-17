@@ -3,7 +3,7 @@ Version:	54512
 Release:	2
 Summary:	Use OCGs within a PDF document without JavaScript
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ocgx
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ocgx
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ocgx.doc.r%{version}.tar.xz
